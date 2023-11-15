@@ -16,7 +16,7 @@ This was a pair project with my collegue Joana and we were given 2 days to creat
 
 ## Brief
 - Consume a public API – this could be anything but it must make sense for your project.
-- Have multiple components
+- Have multiple components.
 - The app can have a router - with several "pages", this is up to you and if it makes sense for your project.
 - Include wireframes - that you designed before building the app.
 - Be deployed online and accessible to the public.
@@ -47,7 +47,7 @@ The CharactersList component's state management was critical. It needed to handl
 
 ### Dynamic rendering
 
-Once the data is fetched, rendering the list of characters dynamically was next. To ensure performance and key management, I used the character IDs as keys for the list items, since they are unique.
+Once the data is fetched, rendering the list of characters dynamically was next. To ensure performance and key management, I used the character IDs (`character._id`) as keys for the list items, since they are unique.
 
 ![characters-map](/public/images/characters-map.png)
 
@@ -57,13 +57,13 @@ Throughout the development process, my focus was on writing clean, efficient, an
 
 Some of the disney characters in the API had placeholder images, however some didn’t so therefore we had to add our own placeholder image too. 
 
-Another issue with the API was that it had an internal server error and was fragile so halfway through the project it would stop and start working again. I would’ve saved the data in a .json file so that if the API returned a response of a 500 status code, then the application would read from a cached `.json` file.
+Another issue with the API was that it had an internal server error and was fragile so halfway through the project it would stop and start working again. I would’ve saved the data in a `.json` file so that if the API returned a response of a 500 status code, then the application would read from a cached `.json` file.
 
 ### Wins
 
 In this code snippet, I implemented a ternary operator to check if the length of the array for that category is greater than 0 (indicating that there are items to display).
-If true (length > 0), it maps over the array and renders each item.
-If false (no items), it renders a `<div>` with a message indicating that there are no items found for that category.
+`If true (length > 0)`, it maps over the array and renders each item.
+`If false (no items)`, it renders a `<div>` with a message indicating that there are no items found for that category.
 
 ![ternary-operator](/public/images/ternary-operator.png)
 
@@ -71,10 +71,10 @@ If false (no items), it renders a `<div>` with a message indicating that there a
 
 - I feel more confident with using React and fetching data from an external API.
 - Pair programming definitely taught me how to read and understand other people’s code.
-- Gained valuable understanding of the significance of cooperative engagement in a group setting, valuing the perspectives of each other, and offering support when needed. This exposure enhanced my abilities to interact effectively with others and contributed to a more cohesive team environment.
+- I gained valuable understanding of the significance of cooperative engagement in a group setting, valuing the perspectives of each other, and offering support when needed. This exposure enhanced my abilities to interact effectively with others and contributed to a more cohesive team environment.
 
 
 ### Future Improvements
 
-- Add pagination and a search bar
-- Make it responsive
+- Add pagination and a search bar.
+- Make it responsive.
