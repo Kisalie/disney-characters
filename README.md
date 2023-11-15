@@ -1,10 +1,10 @@
 # Disney Characters
 
-This was our second project on the coding bootcamp and it is a Disney Characters database where users can find the characters and see what tv shows, films or video games they were in.
+This was our second project on the coding bootcamp and it is a Disney characters database where users can find the characters and see what tv shows, films or video games they were in.
 
 ## Timeframe
 
-This was a pair project with my collegue Joana and we were given 2 days to create a react based app.
+This was a pair project with my colleague Joana and we were given 2 days to create a React application using the Disney API.
 
 ## Technologies Used 💡
 
@@ -41,7 +41,7 @@ The data we wanted to get from the Disney API was, the character name, image url
 
 ![API](/public/images/insomnia.png)
 
-The CharactersList component's state management was critical. It needed to handle asynchronous API calls while providing feedback to the user. By using an async function inside the useEffect hook, I made sure that the character data is fetched and set into state as soon as the component mounts. The empty dependency array [ ] ensures that this effect runs once upon mount.
+The `CharactersList` component's state management was critical. It needed to handle asynchronous API calls while providing feedback to the user. By using an async function inside the useEffect hook, I made sure that the character data is fetched and set into state as soon as the component mounts. The empty dependency array `[ ]\` ensures that this effect runs once upon mount.
 
 ![characterlist](/public/images/character-list.png)
 
